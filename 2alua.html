@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meu Site</title>
+    </head>
+    <body>
+        <h1>Olá mundão véio!</h1>
+        <h2>Foco na luta</h2>
+
+        <button onclick="changeBg(event)">Mudar Cor</button>
+        <button onclick="checkout()">checar cor do ceu</button>
+
+    </body>
+    <Script>
+        function changeBg(event) {
+            console.log(event);
+            if(document.body.style.backgroundColor === 'red') {
+                document.body.style.backgroundColor = 'blue'
+
+            } else {
+                document.body.style.backgroundColor = 'red'
+            }
+        } 
+        function checkout() {
+            console.log();
+            if(colorsky === 'blue') {
+                console.log('SIM') 
+            }
+            if(lucknumber > 6){
+                console.log('Quase')
+            }
+            if(lucknumber>4&&lucknumber<9){
+                console.log('Quente')
+            
+            } else {
+                console.log('Deu certo o ESLSE')
+            }
+        }
+
+
+        var lucknumber = 7;   
+        var myfavorityfood = 'Lasanha';
+        var myfavorityveycule = 'Moto';
+        var colorsky = 'blue';
+
+        console.log(myfavorityfood)
+        console.log('my favory veycule is: ' + myfavorityveycule)
+        console.log(colorsky)
+        console.log('Qual a cor do céu? ' + colorsky) 
+
+    </Script>
+</html>
